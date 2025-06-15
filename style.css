@@ -103,23 +103,29 @@ main {
 }
 
 .link-button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
+  display: flex;              /* ativa flexbox para alinhar itens */
+  align-items: center;        /* alinha verticalmente ao centro */
+  gap: 8px;                   /* espaço entre ícone e texto */
+  justify-content: center;    /* alinha o conteúdo horizontalmente no centro */
+  /* mantém o restante da sua estilização já existente */
   background-color: #1e1e1e;
   border: 1px solid var(--cor-primaria);
   color: var(--cor-texto);
-  text-align: left;
+  text-decoration: none;
   padding: 14px;
   border-radius: 10px;
-  text-decoration: none;
   font-weight: 400;
   transition: all 0.3s ease;
 }
 
 .link-button:hover {
   background-color: var(--cor-primaria);
+}
+
+.btn-icon {
+  width: 20px;      /* tamanho pequeno e consistente */
+  height: 20px;
+  object-fit: contain;
 }
 
 .link-icon {
@@ -223,4 +229,18 @@ footer {
   border: 1px solid var(--cor-primaria);
   border-radius: 10px;
   display: block;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 8px;
+}
+
+.portfolio-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* mantém as imagens quadradas */
+  border-radius: 8px;
+  border: 1px solid var(--cor-primaria);
+  object-fit: cover;
 }
