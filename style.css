@@ -244,3 +244,18 @@ footer {
   border: 1px solid var(--cor-primaria);
   object-fit: cover;
 }
+
+.fix-mobile-warning {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--cor-secundaria);
+  margin-bottom: 10px;
+}
+.fix-mobile-warning a {
+  color: var(--cor-primaria);
+  text-decoration: underline;
+  opacity: 0.9;
+}
+.fix-mobile-warning a:hover {
+  opacity: 1;
+}
