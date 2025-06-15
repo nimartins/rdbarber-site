@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diogo Maia | Barbeiro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="img/logo.png" alt="Logo Barbearia" class="logo-img" />
+      <h1 class="logo">Diogo Maia | Barbeiro</h1>
+      <p class="bio">Estilo é atitude, e eu tô pronto pra te transformar.</p>
+      <nav>
+        <button class="tab-btn active" data-tab="links">Links</button>
+        <button class="tab-btn" data-tab="agendamento">Agendamento</button>
+        <button class="tab-btn" data-tab="localizacao">Localização</button>
+        <button class="tab-btn" data-tab="portfolio">Portfólio</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="links" class="tab-content active">
+        <div class="link-wrapper">
+          <a href="https://wa.me/seunumerodetelefone" class="link-button" target="_blank">
+            <img src="img/whatsapp.png" alt="WhatsApp" class="link-icon" />
+            WhatsApp
+          </a>
+        </div>
+        <div class="link-wrapper">
+          <a href="https://www.instagram.com/seuusuario" class="link-button" target="_blank">
+            <img src="img/instagram.png" alt="Instagram" class="link-icon" />
+            Instagram
+          </a>
+        </div>
+        <div class="link-wrapper">
+          <a href="https://linkdoappdeagendamento.com" class="link-button" target="_blank">
+            <img src="img/agendamento.png" alt="Agendamento" class="link-icon" />
+            Agendamento
+          </a>
+        </div>
+      </section>
+
+      <section id="agendamento" class="tab-content">
+        <div class="abrir-externo">
+          <a href="https://sites.appbarber.com.br/barbeariaaraujo-ryjr" target="_blank" rel="noopener noreferrer">Abrir em outra guia</a>
+        </div>
+        <iframe src="https://sites.appbarber.com.br/barbeariaaraujo-ryjr" class="iframe-agendamento" title="Plataforma de Agendamento"></iframe>
+      </section>
+
+      <section id="localizacao" class="tab-content">
+        <div class="map-buttons">
+          <a href="https://www.google.com/maps?q=Rua+Exemplo,+123,+São+Paulo" class="small-link-button" target="_blank">Google Maps</a>
+          <a href="https://maps.apple.com/?q=Rua+Exemplo,+123,+São+Paulo" class="small-link-button" target="_blank">Apple Maps</a>
+          <a href="https://waze.com/ul?ll=-23.55052,-46.633308&navigate=yes" class="small-link-button" target="_blank">Waze</a>
+        </div>
+        <iframe 
+          src="https://www.google.com/maps?q=Rua+Exemplo,+123,+São+Paulo&output=embed" 
+          class="iframe-mapa" 
+          allowfullscreen 
+          loading="lazy" 
+          title="Mapa da Localização"
+        ></iframe>
+      </section>
+
+
+      <section id="portfolio" class="tab-content">
+        <div class="portfolio-item">
+          <img src="img/1.jpg" alt="Corte 1" />
+          <p>Degradê + barba desenhada</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="img/2.jpg" alt="Corte 2" />
+          <p>Moicano com pigmentação</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© Nicole Martins 2025. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
